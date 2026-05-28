@@ -21,8 +21,14 @@ img { display: block; max-width: 100%; }
   padding: var(--space-7) 0 var(--space-3);
   text-align: center;
 }
-.masthead-rule { height: 1px; background: var(--musa-rule); margin: 0; }
-.masthead-inner { padding: var(--space-6) 0 var(--space-4); display: flex; flex-direction: column; align-items: center; gap: var(--space-3); }
+.masthead-rule { height: 1px; background: var(--musa-rule); margin: 0; border: none; }
+.masthead-inner {
+  padding: var(--space-6) 0 var(--space-4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+}
 .masthead-issue {
   font-family: var(--musa-font-utility);
   text-transform: uppercase;
@@ -48,9 +54,16 @@ img { display: block; max-width: 100%; }
   color: var(--musa-walnut);
   margin: 0;
 }
-.masthead-nav { display: flex; gap: var(--space-6); justify-content: center; padding: var(--space-4) 0; }
+.masthead-nav {
+  display: flex;
+  gap: var(--space-6);
+  justify-content: center;
+  padding: var(--space-4) 0;
+}
 .masthead-nav-link {
-  background: none; border: 0; cursor: pointer;
+  background: none;
+  border: 0;
+  cursor: pointer;
   font-family: var(--musa-font-utility);
   text-transform: uppercase;
   letter-spacing: 0.18em;
@@ -59,41 +72,73 @@ img { display: block; max-width: 100%; }
   padding: 4px 0;
   position: relative;
   font-weight: 500;
+  transition: color var(--dur-fast) var(--ease);
 }
 .masthead-nav-link:hover { color: var(--musa-oxblood); }
 .masthead-nav-link.is-active { color: var(--musa-oxblood); }
 .masthead-nav-link.is-active::after {
   content: '';
-  position: absolute; left: 50%; right: 0; bottom: -6px;
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
   transform: translateX(-50%);
-  width: 18px; height: 1px; background: var(--musa-oxblood);
+  width: 18px;
+  height: 1px;
+  background: var(--musa-oxblood);
 }
 
 /* ============================================================
-   LEAD ESSAY (homepage lead)
+   LEAD ESSAY — large DM Serif Display, image right, Bone bg
    ============================================================ */
 .lead-essay {
-  width: min(100% - 2.5rem, 760px);
+  width: min(100% - 2.5rem, 900px);
   margin: var(--space-9) auto;
-  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 0.55fr;
+  gap: var(--space-7);
+  align-items: start;
+}
+.lead-essay-content {
+  /* left column */
+}
+.lead-essay-image {
+  /* right column */
+  padding-top: var(--space-4);
+}
+.lead-essay-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Ochre 1px rule above byline */
+.lead-rule {
+  border: none;
+  border-top: 1px solid var(--musa-ochre);
+  margin: 0 0 var(--space-3);
+  width: 100%;
 }
 .lead-num {
   font-family: var(--musa-font-utility);
   text-transform: uppercase;
   letter-spacing: 0.22em;
-  font-size: 0.75rem;
+  font-size: 0.6875rem;
   color: var(--musa-walnut);
   margin: 0 0 var(--space-4);
 }
+
+/* DM Serif Display title, h1-sized */
 .lead-title {
   font-family: var(--musa-font-display);
   color: var(--musa-ink);
   font-weight: 400;
-  font-size: clamp(3rem, 6vw, 4.75rem);
+  font-size: clamp(2.5rem, 5.5vw, 4rem);
   line-height: 1.02;
   letter-spacing: -0.01em;
   margin: 0 0 var(--space-4);
 }
+
+/* Walnut uppercase byline */
 .lead-byline {
   font-family: var(--musa-font-utility);
   text-transform: uppercase;
@@ -102,16 +147,19 @@ img { display: block; max-width: 100%; }
   color: var(--musa-walnut);
   margin: 0 0 var(--space-5);
 }
+
+/* EB Garamond lede — 3-4 sentences, italic */
 .lead-lede {
   font-family: var(--musa-font-body);
   font-style: italic;
-  font-size: 1.25rem;
-  line-height: 1.5;
+  font-size: 1.1875rem;
+  line-height: 1.55;
   color: var(--musa-ink);
   margin: 0 0 var(--space-6);
   max-width: 38rem;
-  margin-inline: auto;
 }
+
+/* "Read the essay" in Oxblood */
 .lead-open {
   background: none;
   border: 0;
@@ -121,9 +169,13 @@ img { display: block; max-width: 100%; }
   letter-spacing: 0.18em;
   font-size: 0.75rem;
   color: var(--musa-oxblood);
+  text-decoration: none;
   border-bottom: 1px solid var(--musa-oxblood);
   padding: 4px 0;
+  display: inline-block;
+  transition: color var(--dur-fast) var(--ease), border-color var(--dur-fast) var(--ease);
 }
+.lead-open:hover { color: #5A1518; border-color: #5A1518; }
 
 /* ============================================================
    ARCHIVE / ESSAY LIST
@@ -134,51 +186,90 @@ img { display: block; max-width: 100%; }
   padding: var(--space-9) 0;
 }
 .archive-head { text-align: center; margin-bottom: var(--space-7); }
-.archive-label { font-family: var(--musa-font-utility); text-transform: uppercase; letter-spacing: 0.22em; font-size: 0.6875rem; color: var(--musa-walnut); margin: 0 0 var(--space-3); }
-.archive-head h2 { font-family: var(--musa-font-display); color: var(--musa-ink); font-weight: 400; font-size: clamp(1.875rem, 3.5vw, 2.75rem); margin: 0; }
+.archive-label {
+  font-family: var(--musa-font-utility);
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  font-size: 0.6875rem;
+  color: var(--musa-walnut);
+  margin: 0 0 var(--space-3);
+}
+.archive-head h2 {
+  font-family: var(--musa-font-display);
+  color: var(--musa-ink);
+  font-weight: 400;
+  font-size: clamp(1.875rem, 3.5vw, 2.75rem);
+  margin: 0;
+}
 
 .essay-list { list-style: none; padding: 0; margin: 0; }
+
+/* Each essay row: 1px Ochre top rule, no border elsewhere */
 .essay-list .essay-row {
   display: grid;
-  grid-template-columns: 100px 1fr;
+  grid-template-columns: 90px 1fr;
   gap: var(--space-5);
   padding: var(--space-6) 0;
   border-top: 1px solid var(--musa-ochre);
 }
 .essay-list .essay-row:last-child { border-bottom: 1px solid var(--musa-ochre); }
+
+/* Walnut date: uppercase Inter small */
 .er-num {
   font-family: var(--musa-font-utility);
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  font-size: 0.75rem;
+  font-size: 0.6875rem;
   color: var(--musa-walnut);
   padding-top: 8px;
 }
+
+/* DM Serif Display title */
 .er-title {
   font-family: var(--musa-font-display);
   color: var(--musa-ink);
   font-weight: 400;
-  font-size: clamp(1.75rem, 2.4vw, 2.125rem);
+  font-size: clamp(1.625rem, 2.4vw, 2rem);
   line-height: 1.1;
   margin: 0 0 var(--space-2);
 }
-.er-title a { color: inherit; text-decoration: none; }
+.er-title a { color: inherit; text-decoration: none; transition: color var(--dur-fast) var(--ease); }
 .er-title a:hover { color: var(--musa-oxblood); }
+
+/* EB Garamond lede 1-2 sentences */
 .er-lede {
   font-family: var(--musa-font-body);
-  font-size: 1.125rem;
-  line-height: 1.5;
+  font-size: 1.0625rem;
+  line-height: 1.55;
   color: var(--musa-ink);
   margin: 0 0 var(--space-3);
 }
+
+/* Small meta: date, length */
 .er-meta {
   font-family: var(--musa-font-utility);
   text-transform: uppercase;
   letter-spacing: 0.16em;
   font-size: 0.6875rem;
   color: var(--musa-walnut);
-  margin: 0;
+  margin: 0 0 var(--space-2);
 }
+
+/* Oxblood "Read" link */
+.er-read {
+  font-family: var(--musa-font-utility);
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.6875rem;
+  color: var(--musa-oxblood);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: color var(--dur-fast) var(--ease);
+}
+.er-read:hover { color: #5A1518; }
+
 .archive-foot { text-align: center; padding-top: var(--space-6); }
 .archive-foot a {
   font-family: var(--musa-font-utility);
@@ -191,13 +282,38 @@ img { display: block; max-width: 100%; }
 .archive-foot a:hover { text-decoration: underline; text-underline-offset: 4px; }
 
 /* ============================================================
-   ARTICLE (single essay reading view)
+   ARTICLE — single essay reading view
    ============================================================ */
 .article {
   width: min(100% - 2.5rem, 660px);
   margin: var(--space-7) auto var(--space-9);
+  background: var(--musa-bone);
+  padding: 0 0 var(--space-8);
 }
-.article-head { text-align: center; margin-bottom: var(--space-7); padding-bottom: var(--space-6); border-bottom: 1px solid var(--musa-rule); }
+
+/* Back link at top */
+.article-back {
+  font-family: var(--musa-font-utility);
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.6875rem;
+  color: var(--musa-oxblood);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: var(--space-7);
+  transition: color var(--dur-fast) var(--ease);
+}
+.article-back:hover { color: #5A1518; }
+
+.article-head {
+  text-align: center;
+  margin-bottom: var(--space-7);
+  padding-bottom: var(--space-6);
+}
+
+/* Walnut uppercase byline */
 .article-num {
   font-family: var(--musa-font-utility);
   text-transform: uppercase;
@@ -206,6 +322,8 @@ img { display: block; max-width: 100%; }
   color: var(--musa-walnut);
   margin: 0 0 var(--space-4);
 }
+
+/* DM Serif Display h1 title, large */
 .article-title {
   font-family: var(--musa-font-display);
   color: var(--musa-ink);
@@ -215,20 +333,30 @@ img { display: block; max-width: 100%; }
   letter-spacing: -0.01em;
   margin: 0 0 var(--space-4);
 }
+
 .article-byline {
   font-family: var(--musa-font-utility);
   text-transform: uppercase;
   letter-spacing: 0.2em;
   font-size: 0.6875rem;
   color: var(--musa-walnut);
+  margin: 0 0 var(--space-5);
+}
+
+/* Ochre rule below title/byline */
+.article-title-rule {
+  border: none;
+  border-top: 1px solid var(--musa-ochre);
   margin: 0;
 }
+
+/* Drop cap on first letter */
 .article-body p {
   font-family: var(--musa-font-body);
   font-size: 1.1875rem;
   line-height: 1.7;
   color: var(--musa-ink);
-  margin: 0 0 var(--space-4);
+  margin: 0 0 var(--space-5);
   max-width: 64ch;
 }
 .article-body .dropcap::first-letter {
@@ -240,8 +368,10 @@ img { display: block; max-width: 100%; }
   padding: 0.08em 0.12em 0 0;
   font-weight: 400;
 }
+
+/* Pull quote: DM Serif Display, Ochre rules above and below */
 .pullquote {
-  margin: var(--space-7) 0;
+  margin: var(--space-8) 0;
   padding: var(--space-5) 0;
   border-top: 1px solid var(--musa-ochre);
   border-bottom: 1px solid var(--musa-ochre);
@@ -254,15 +384,42 @@ img { display: block; max-width: 100%; }
   color: var(--musa-ink);
   margin: 0 auto;
   max-width: 36ch;
+  font-style: italic;
 }
-.article-foot { margin-top: var(--space-8); }
-.article-foot .rule-ochre { margin-bottom: var(--space-4); }
+
+/* Author bio at bottom: Walnut rule, generous whitespace */
+.article-foot {
+  margin-top: var(--space-9);
+  padding-top: var(--space-5);
+  border-top: 1px solid var(--musa-walnut);
+}
+.article-foot-back {
+  font-family: var(--musa-font-utility);
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.6875rem;
+  color: var(--musa-oxblood);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: var(--space-5);
+  transition: color var(--dur-fast) var(--ease);
+}
+.article-foot-back:hover { color: #5A1518; }
 .article-foot-byline {
   font-family: var(--musa-font-body);
   font-style: italic;
   color: var(--musa-walnut);
   font-size: 1rem;
   margin: 0;
+  line-height: 1.6;
+}
+.article-foot-byline a {
+  color: var(--musa-oxblood);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
 }
 
 /* ============================================================
@@ -280,11 +437,19 @@ img { display: block; max-width: 100%; }
   background: var(--musa-oxblood);
   color: var(--musa-bone);
   padding: var(--space-6);
-  display: flex; align-items: flex-end;
-  border: 1px solid rgba(0,0,0,0.08);
+  display: flex;
+  align-items: flex-end;
+  border: 1px solid rgba(0, 0, 0, 0.08);
 }
 .bf-cover-inner { width: 100%; }
-.bf-cover-author { font-family: var(--musa-font-utility); text-transform: uppercase; letter-spacing: 0.18em; font-size: 0.6875rem; opacity: 0.8; margin: 0 0 var(--space-3); }
+.bf-cover-author {
+  font-family: var(--musa-font-utility);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.6875rem;
+  opacity: 0.8;
+  margin: 0 0 var(--space-3);
+}
 .bf-cover-title {
   font-family: var(--musa-font-display);
   font-size: clamp(2rem, 3.6vw, 2.75rem);
@@ -298,7 +463,13 @@ img { display: block; max-width: 100%; }
 .bf-sub { font-family: var(--musa-font-body); font-style: italic; font-size: 1.125rem; color: var(--musa-walnut); margin: 0 0 var(--space-4); }
 .bf-copy p { margin: 0 0 var(--space-4); max-width: 38rem; }
 .bf-meta { list-style: none; padding: 0; margin: 0 0 var(--space-5); border-top: 1px solid var(--musa-rule); }
-.bf-meta li { display: grid; grid-template-columns: 110px 1fr; padding: var(--space-2) 0; border-bottom: 1px solid var(--musa-rule); align-items: baseline; }
+.bf-meta li {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  padding: var(--space-2) 0;
+  border-bottom: 1px solid var(--musa-rule);
+  align-items: baseline;
+}
 .bf-meta li span { font-family: var(--musa-font-utility); text-transform: uppercase; letter-spacing: 0.14em; font-size: 0.6875rem; color: var(--musa-walnut); }
 .bf-meta li em { font-style: normal; font-family: var(--musa-font-body); font-size: 1rem; color: var(--musa-ink); }
 .bf-link {
@@ -310,23 +481,66 @@ img { display: block; max-width: 100%; }
   text-decoration: none;
   border-bottom: 1px solid var(--musa-oxblood);
   padding-bottom: 3px;
+  transition: color var(--dur-fast) var(--ease), border-color var(--dur-fast) var(--ease);
 }
+.bf-link:hover { color: #5A1518; border-color: #5A1518; }
 
 /* ============================================================
-   AUTHOR BIO + SUBSCRIBE
+   AUTHOR BIO — generous whitespace, Walnut rule
    ============================================================ */
 .author-bio {
   width: min(100% - 2.5rem, 660px);
   margin: 0 auto;
   padding: var(--space-9) 0;
-  border-top: 1px solid var(--musa-rule);
+  border-top: 1px solid var(--musa-walnut);
 }
-.bio-label { font-family: var(--musa-font-utility); text-transform: uppercase; letter-spacing: 0.22em; font-size: 0.6875rem; color: var(--musa-walnut); margin: 0 0 var(--space-3); }
-.author-bio h2 { font-family: var(--musa-font-display); color: var(--musa-ink); font-weight: 400; font-size: clamp(2rem, 4vw, 3rem); margin: 0 0 var(--space-4); line-height: 1.05; }
-.bio-lede { font-family: var(--musa-font-body); font-style: italic; font-size: 1.25rem; line-height: 1.5; color: var(--musa-ink); margin: 0 0 var(--space-4); }
-.author-bio p { font-family: var(--musa-font-body); font-size: 1.125rem; line-height: 1.65; margin: 0 0 var(--space-4); }
-.subscribe { margin-top: var(--space-6); padding-top: var(--space-5); border-top: 1px solid var(--musa-ochre); }
-.subscribe label { display: block; font-family: var(--musa-font-utility); text-transform: uppercase; letter-spacing: 0.16em; font-size: 0.75rem; color: var(--musa-walnut); margin-bottom: var(--space-3); font-weight: 500; }
+.bio-label {
+  font-family: var(--musa-font-utility);
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  font-size: 0.6875rem;
+  color: var(--musa-walnut);
+  margin: 0 0 var(--space-3);
+}
+.author-bio h2 {
+  font-family: var(--musa-font-display);
+  color: var(--musa-ink);
+  font-weight: 400;
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin: 0 0 var(--space-4);
+  line-height: 1.05;
+}
+.bio-lede {
+  font-family: var(--musa-font-body);
+  font-style: italic;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: var(--musa-ink);
+  margin: 0 0 var(--space-5);
+}
+.author-bio p {
+  font-family: var(--musa-font-body);
+  font-size: 1.125rem;
+  line-height: 1.7;
+  margin: 0 0 var(--space-4);
+}
+
+/* Subscribe form */
+.subscribe {
+  margin-top: var(--space-7);
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--musa-ochre);
+}
+.subscribe label {
+  display: block;
+  font-family: var(--musa-font-utility);
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.75rem;
+  color: var(--musa-walnut);
+  margin-bottom: var(--space-3);
+  font-weight: 500;
+}
 .subscribe-row { display: flex; gap: 8px; }
 .subscribe-row input {
   flex: 1;
@@ -338,6 +552,7 @@ img { display: block; max-width: 100%; }
   color: var(--musa-ink);
   border-radius: var(--radius-sm);
   outline: none;
+  transition: border-color var(--dur-fast) var(--ease);
 }
 .subscribe-row input:focus { border-color: var(--musa-oxblood); }
 .subscribe-row button {
@@ -352,14 +567,27 @@ img { display: block; max-width: 100%; }
   font-weight: 600;
   cursor: pointer;
   border-radius: var(--radius-sm);
+  transition: background var(--dur-base) var(--ease);
 }
-.subscribe-note { font-family: var(--musa-font-utility); font-size: 0.75rem; color: var(--musa-walnut); margin: var(--space-3) 0 0; opacity: 0.85; }
+.subscribe-row button:hover { background: #5A1518; }
+.subscribe-note {
+  font-family: var(--musa-font-utility);
+  font-size: 0.75rem;
+  color: var(--musa-walnut);
+  margin: var(--space-3) 0 0;
+  opacity: 0.85;
+}
 
 /* ============================================================
    FOOTER
    ============================================================ */
 .musa-footer { padding: var(--space-7) 0 var(--space-4); }
-.musa-footer .rule-ochre { width: min(100% - 2.5rem, 1100px); margin: 0 auto var(--space-6); }
+.musa-footer .rule-ochre {
+  width: min(100% - 2.5rem, 1100px);
+  margin: 0 auto var(--space-6);
+  border: none;
+  border-top: 1px solid var(--musa-ochre);
+}
 .musa-footer-inner {
   width: min(100% - 2.5rem, 1100px);
   margin: 0 auto;
@@ -367,12 +595,40 @@ img { display: block; max-width: 100%; }
   grid-template-columns: 1fr 2fr;
   gap: var(--space-7);
 }
-.musa-wordmark-sm { font-family: var(--musa-font-display); font-size: 2rem; color: var(--musa-ink); margin: 0 0 var(--space-2); line-height: 1; }
-.mf-tagline { font-family: var(--musa-font-body); font-style: italic; color: var(--musa-walnut); font-size: 1rem; margin: 0; max-width: 24ch; }
+.musa-wordmark-sm {
+  font-family: var(--musa-font-display);
+  font-size: 2rem;
+  color: var(--musa-ink);
+  margin: 0 0 var(--space-2);
+  line-height: 1;
+}
+.mf-tagline {
+  font-family: var(--musa-font-body);
+  font-style: italic;
+  color: var(--musa-walnut);
+  font-size: 1rem;
+  margin: 0;
+  max-width: 24ch;
+  line-height: 1.6;
+}
 .mf-cols { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-6); }
-.mf-cols h4 { font-family: var(--musa-font-utility); text-transform: uppercase; letter-spacing: 0.16em; font-size: 0.6875rem; color: var(--musa-walnut); margin: 0 0 var(--space-3); font-weight: 500; }
+.mf-cols h4 {
+  font-family: var(--musa-font-utility);
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.6875rem;
+  color: var(--musa-walnut);
+  margin: 0 0 var(--space-3);
+  font-weight: 500;
+}
 .mf-cols ul { list-style: none; padding: 0; margin: 0; display: grid; gap: var(--space-2); }
-.mf-cols a { font-family: var(--musa-font-body); font-size: 1rem; color: var(--musa-ink); text-decoration: none; }
+.mf-cols a {
+  font-family: var(--musa-font-body);
+  font-size: 1rem;
+  color: var(--musa-ink);
+  text-decoration: none;
+  transition: color var(--dur-fast) var(--ease);
+}
 .mf-cols a:hover { color: var(--musa-oxblood); text-decoration: underline; text-underline-offset: 4px; }
 
 .musa-footer-bottom {
@@ -380,24 +636,68 @@ img { display: block; max-width: 100%; }
   margin: var(--space-6) auto 0;
   padding-top: var(--space-4);
   border-top: 1px solid var(--musa-rule);
-  display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;
-  font-family: var(--musa-font-utility); font-size: 0.75rem; color: var(--musa-walnut);
-  text-transform: uppercase; letter-spacing: 0.14em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  font-family: var(--musa-font-utility);
+  font-size: 0.75rem;
+  color: var(--musa-walnut);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
 }
 .musa-footer-bottom ul { list-style: none; padding: 0; margin: 0; display: flex; gap: var(--space-5); }
 .musa-footer-bottom a { color: inherit; text-decoration: none; }
 .musa-footer-bottom a:hover { color: var(--musa-oxblood); }
 
 /* ============================================================
-   RESPONSIVE
+   DROP CAP — global (also declared in colors_and_type.css)
+   ============================================================ */
+.dropcap::first-letter {
+  font-family: var(--musa-font-display);
+  color: var(--musa-oxblood);
+  float: left;
+  font-size: 4.8em;
+  line-height: 0.82;
+  padding: 0.08em 0.12em 0 0;
+  font-weight: 400;
+}
+
+/* ============================================================
+   RESPONSIVE — 760px breakpoint
    ============================================================ */
 @media (max-width: 760px) {
+  /* Lead essay: stack vertically */
+  .lead-essay {
+    grid-template-columns: 1fr;
+    gap: var(--space-5);
+  }
+  .lead-essay-image { order: -1; max-width: 200px; margin: 0 auto; }
+
+  /* Essay rows: single column */
+  .essay-list .essay-row { grid-template-columns: 1fr; gap: var(--space-3); }
+  .er-num { padding-top: 0; }
+
+  /* Book feature: stack */
   .bf-grid { grid-template-columns: 1fr; }
+  .bf-cover { aspect-ratio: 16 / 9; align-items: center; justify-content: center; }
+
+  /* Footer: stack */
   .musa-footer-inner { grid-template-columns: 1fr; }
   .mf-cols { grid-template-columns: 1fr; }
-  .essay-list .essay-row { grid-template-columns: 1fr; gap: var(--space-3); }
+
+  /* Masthead nav: wrap */
   .masthead-nav { gap: var(--space-4); flex-wrap: wrap; }
 }
+
+@media (max-width: 480px) {
+  .subscribe-row { flex-direction: column; }
+  .subscribe-row input { border-radius: var(--radius-sm); }
+  .subscribe-row button { padding: 0.75rem 1rem; border-radius: var(--radius-sm); }
+  .musa-footer-bottom { flex-direction: column; align-items: flex-start; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; animation: none !important; }
 }

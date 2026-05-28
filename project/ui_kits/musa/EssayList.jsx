@@ -2,11 +2,22 @@
 function EssayRow({ num, title, lede, date, length, onOpen }) {
   return (
     <li className="essay-row">
-      <div className="er-num">No. {num}</div>
+      {/* Walnut date: uppercase Inter small */}
+      <div className="er-num">{date}</div>
       <div className="er-body">
-        <h2 className="er-title"><a href="#" onClick={(e) => { e.preventDefault(); onOpen && onOpen(); }}>{title}</a></h2>
+        {/* DM Serif Display title */}
+        <h2 className="er-title">
+          <a href="#" onClick={(e) => { e.preventDefault(); onOpen && onOpen(); }}>
+            {title}
+          </a>
+        </h2>
+        {/* EB Garamond lede — 1-2 sentences */}
         <p className="er-lede">{lede}</p>
-        <p className="er-meta">{date} &nbsp;·&nbsp; {length}</p>
+        <p className="er-meta">{length} read</p>
+        {/* Oxblood "Read" link */}
+        <a href="#" className="er-read" onClick={(e) => { e.preventDefault(); onOpen && onOpen(); }}>
+          Read <span aria-hidden="true">&#8594;</span>
+        </a>
       </div>
     </li>
   );
@@ -14,23 +25,56 @@ function EssayRow({ num, title, lede, date, length, onOpen }) {
 
 function EssayList({ onOpen }) {
   const essays = [
-    { num: '11', title: 'Inheritances', lede: 'On the grammar of grief and what it means to carry someone else\u2019s memory.', date: 'October 2026', length: '14 min' },
-    { num: '10', title: 'The Practice of Attention', lede: 'A clinician\u2019s argument for slowness in a discipline obsessed with throughput.', date: 'September 2026', length: '11 min' },
-    { num: '09', title: 'Permission, Conditional', lede: 'On the way trauma renegotiates the everyday contracts of being known.', date: 'August 2026', length: '9 min' },
-    { num: '08', title: 'A Vocabulary for Silence', lede: 'The clinical vocabulary for dissociation feels small against what it tries to describe.', date: 'July 2026', length: '12 min' },
-    { num: '07', title: 'The Body\u2019s Footnotes', lede: 'What somatic awareness looks like when it isn\u2019t marketed back to us as wellness.', date: 'June 2026', length: '10 min' },
+    {
+      num: '11',
+      title: 'The Diagnostic Gaze: When Assessment Becomes Care',
+      lede: 'What changes when we treat the act of diagnosis as a clinical encounter rather than an administrative task.',
+      date: 'April 2026',
+      length: '14 min',
+    },
+    {
+      num: '10',
+      title: 'Grief Without a Name: Ambiguous Loss in Contemporary Life',
+      lede: 'Pauline Boss gave us the term. The clinical hour is still working out what to do with it — and with the losses that have no ceremony.',
+      date: 'March 2026',
+      length: '11 min',
+    },
+    {
+      num: '09',
+      title: 'What It Means to Witness: Notes from a Clinical Practice',
+      lede: 'On bearing witness as a clinical and ethical act — and what it costs to do it carefully.',
+      date: 'February 2026',
+      length: '9 min',
+    },
+    {
+      num: '08',
+      title: 'Inheritances',
+      lede: 'On the grammar of grief and what it means to carry someone else’s memory as if it were your own.',
+      date: 'January 2026',
+      length: '12 min',
+    },
+    {
+      num: '07',
+      title: 'The Practice of Attention',
+      lede: 'A clinician’s argument for slowness in a discipline obsessed with throughput.',
+      date: 'December 2025',
+      length: '10 min',
+    },
   ];
+
   return (
     <section className="archive" aria-label="Essay archive">
       <header className="archive-head">
-        <p className="archive-label">Archive · 2026</p>
+        <p className="archive-label">Archive &nbsp;&middot;&nbsp; 2026</p>
         <h2>Essays</h2>
       </header>
       <ol className="essay-list">
-        {essays.map((e) => (<EssayRow key={e.num} {...e} onOpen={onOpen} />))}
+        {essays.map((e) => (
+          <EssayRow key={e.num} {...e} onOpen={onOpen} />
+        ))}
       </ol>
       <div className="archive-foot">
-        <a href="#">View 2025 archive →</a>
+        <a href="#">View 2025 archive &#8594;</a>
       </div>
     </section>
   );

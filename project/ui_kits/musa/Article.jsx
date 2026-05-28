@@ -1,53 +1,100 @@
 /* global React */
 function Article() {
   return (
-    <article className="article">
+    <article className="article" aria-label="Essay">
+      {/* Back to Essays link at top */}
+      <a href="#" className="article-back">
+        <span aria-hidden="true">&#8592;</span> Back to Essays
+      </a>
+
+      {/* Article header */}
       <header className="article-head">
         <p className="article-num">Essay No. 12</p>
-        <h1 className="article-title">The Quiet Room</h1>
-        <p className="article-byline">By Angela Serravalle &nbsp;·&nbsp; November 2026 &nbsp;·&nbsp; 18 min read</p>
+
+        {/* DM Serif Display h1 title, large */}
+        <h1 className="article-title">On Memory and the Body: What Trauma Teaches Us About Time</h1>
+
+        {/* Walnut uppercase byline */}
+        <p className="article-byline">Angela Serravalle &nbsp;&middot;&nbsp; May 2026 &nbsp;&middot;&nbsp; 18 min read</p>
+
+        {/* Ochre rule below title/byline */}
+        <hr className="article-title-rule" aria-hidden="true" />
       </header>
+
+      {/* Article body */}
       <div className="article-body">
+        {/* Drop cap on first letter via .dropcap class */}
         <p className="dropcap">
-          There is a room in the clinic where I see most of my patients. It is
-          small and unbeautiful, lit by a single lamp I bought because the
-          overhead fluorescent was, in the language of the body, hostile. The
-          chair I sit in is older than the practice. The chair my patients sit
-          in is newer. We talk for fifty minutes, or sometimes we don't talk,
-          and the room holds whatever happens with the absence of opinion that
-          is its primary qualification.
+          The body keeps a record that the mind is still learning to read. In the
+          clinical hour, I have come to understand this not as metaphor but as
+          mechanism: the way a patient will describe a memory she does not
+          consciously hold, the way her shoulders move before her words arrive,
+          the way the nervous system narrates in a language the prefrontal cortex
+          was not invited to translate. Trauma, it turns out, does not behave like
+          ordinary memory. It refuses sequence. It resists the tidy retrospective
+          coherence that ordinary remembering provides.
         </p>
         <p>
-          When a patient is in the deep middle of something, she will sometimes
-          go very still. The body, finding no acceptable response, declines to
-          produce one. The clinical literature calls this dissociation, freeze,
-          a parasympathetic shutdown — and these names are useful, the way
-          maps are useful when you are not yourself the territory. But I have
-          come to think that what we see in those moments is not a failure of
-          composure. It is a refusal to translate.
+          When we speak of traumatic memory, we tend to speak of its pathology — the
+          flashback, the intrusion, the hypervigilance that makes the past a present
+          event. These are real. But what interests me more, clinically and as a
+          writer, is the structure of traumatic time itself: the way it collapses
+          distinctions the rest of us take for granted. The distinction between then
+          and now. Between here and there. Between what happened and what is
+          happening. A patient who was harmed at seven years old is also, in some
+          measurable neurobiological sense, still seven in the parts of herself she
+          has not been able to integrate. This is not a figure of speech.
         </p>
+
+        {/* Pull quote: DM Serif Display, Ochre rules above and below */}
         <blockquote className="pullquote">
-          <p>What we call composure is sometimes the body refusing to translate.</p>
+          <p>
+            What we call composure is sometimes the body refusing to translate —
+            and the refusal is, in its own way, a kind of integrity.
+          </p>
         </blockquote>
+
         <p>
-          Translation requires equivalence: a word in this language for the
-          word in that one, a gesture here that corresponds to the gesture
-          there. The body, when something has happened to it that has no
-          equivalent in language, has two options. It can produce a noise that
-          everyone in the room will receive as inadequate — a sob, a tremor,
-          the unspecific shaking — or it can decline.
+          I think often about what the French psychoanalyst Jean Laplanche called
+          the &ldquo;enigmatic signifier&rdquo; — the communication from one person to another
+          that arrives with more meaning than the sender consciously intended, that
+          embeds itself in the receiver and demands, across a lifetime, to be
+          metabolized. Trauma works something like this. It arrives as an event,
+          but it lives as a presence. The body, having received something it cannot
+          process, stores it undigested — not archived, not resolved, but suspended.
+          Time does not pass for it the way time passes for the rest of the self.
         </p>
         <p>
-          I have come to read the decline as a kind of integrity. Not absence,
-          not avoidance, not the failure of the therapeutic moment, but a body
-          insisting on its own pace. The work, then, is not to break the
-          stillness but to be in it without flinching, and to mark, when the
-          patient returns, that she did not return alone.
+          What this means clinically is that the therapeutic task is not primarily
+          one of narration — telling the story, finding the words, constructing the
+          coherent account. Narration can help, and sometimes it is what the person
+          most needs. But in complex and developmental trauma presentations, the
+          story has often already been told, sometimes hundreds of times, without
+          resolution. The telling is not the problem. The problem is time — the body
+          that cannot locate the past in the past, cannot receive the evidence that
+          it is now safe, cannot integrate the interruption of the original event
+          into the ongoing sequence of a life.
+        </p>
+        <p>
+          The work I find most useful in those cases is not narrative. It is
+          relational, somatic, and slow. It is the work of being present without
+          requiring the body to produce an account. It is the work, sometimes, of
+          sitting in a room with another person and doing nothing except refusing
+          to be frightened by what she carries.
         </p>
       </div>
+
+      {/* Article footer: author bio + back link */}
       <footer className="article-foot">
-        <hr className="rule-ochre"/>
-        <p className="article-foot-byline">Angela Serravalle is a licensed psychologist in Middletown, Delaware. Her clinical work is at <a href="#">Center for Balanced Living</a>.</p>
+        <a href="#" className="article-foot-back">
+          <span aria-hidden="true">&#8592;</span> Back to Essays
+        </a>
+        <p className="article-foot-byline">
+          Angela Serravalle is a licensed psychologist and founder of{' '}
+          <a href="#">Center for Balanced Living</a> in Middletown, Delaware.
+          She teaches at the <a href="#">CFBL Institute</a> and writes at{' '}
+          <a href="#">MUSA</a>.
+        </p>
       </footer>
     </article>
   );
