@@ -4,7 +4,8 @@ function FounderSection() {
     <section className="founder" aria-label="About Dr. Serravalle">
       <div className="founder-grid">
         <div className="founder-portrait">
-          <div className="portrait-frame">
+          {/* Circular portrait treatment */}
+          <div className="portrait-circle">
             <div className="portrait-placeholder">
               <p className="placeholder-label">Portrait</p>
               <p className="placeholder-copy">Editorial photograph of Dr. Serravalle</p>
@@ -12,8 +13,9 @@ function FounderSection() {
           </div>
         </div>
         <div className="founder-content">
-          <p className="eyebrow">About</p>
-          <h2>Dr. Angela (Niki) Serravalle, Psy.D., LPCMH, NCC</h2>
+          <p className="eyebrow">About the Practice</p>
+          <p className="founder-credentials">Psy.D., LPCMH, NCC</p>
+          <h2>Dr. Angela (Niki) Serravalle</h2>
           <p>
             A trauma-informed psychologist, educator, and writer. Founder of the
             Center for Balanced Living, the CFBL Institute, and the MUSA author
