@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Elevation</title>
+<link rel="stylesheet" href="_card.css"/>
+<style>
+  .row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; padding: 14px 0 4px; }
+  .e { background: #fff; border-radius: 4px; height: 90px; display: flex; align-items: flex-end; justify-content: center; padding: 10px; font: 500 11px 'Inter', sans-serif; color: rgba(31,26,22,0.6); }
+  .note { font: 11.5px/1.55 'Inter', sans-serif; color: rgba(31,26,22,0.6); max-width: 60ch; margin-top: 10px; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="label">Elevation — used sparingly. Most surfaces are flat.</div>
+  <div class="row">
+    <div class="e" style="box-shadow: 0 1px 2px rgba(31,26,22,0.06);">shadow-sm</div>
+    <div class="e" style="box-shadow: 0 4px 12px rgba(31,26,22,0.08);">shadow-md</div>
+    <div class="e" style="box-shadow: 0 12px 32px rgba(31,26,22,0.10);">shadow-lg</div>
+  </div>
+  <div class="note">Reserve shadows for modal/dropdown layers. Cards and sections sit flat on the page; hierarchy comes from typography, whitespace, and color-blocked headers — not elevation.</div>
+</div>
+</body>
+</html>

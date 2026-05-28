@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Cards</title>
+<link rel="stylesheet" href="_card.css"/>
+<style>
+  .row { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0; }
+  .well { padding: 16px; min-height: 200px; }
+  .well.cfbl { background: #EED9C5; }
+  .well.inst { background: #EAE2D0; display: flex; align-items: stretch; }
+  .well.musa { background: #F1E8D8; display: flex; align-items: stretch; }
+  .well.inst .inst-card, .well.musa .musa-card { flex: 1; }
+
+  /* CFBL service card */
+  .cfbl-card {
+    background: #FAF1E6;
+    padding: 16px 16px 18px;
+    border-radius: 2px;
+    display: flex; flex-direction: column; gap: 8px;
+  }
+  .cfbl-card .kicker { font: 500 9.5px 'Montserrat',sans-serif; text-transform: uppercase; letter-spacing: 0.14em; color: #9D654E; }
+  .cfbl-card h4 { font-family: 'Cormorant SC', serif; color: #2B5275; font-size: 19px; font-weight: 500; margin: 0; }
+  .cfbl-card p  { font-family: 'Montserrat', sans-serif; color: #1F2A33; font-size: 12px; line-height: 1.5; margin: 0; opacity: 0.85; }
+  .cfbl-card .arrow { color: #4E9FBF; font-family: 'Montserrat',sans-serif; font-size: 12px; font-weight: 500; }
+
+  /* Institute training card */
+  .inst-card {
+    background: #F0EAE0;
+    padding: 16px 16px 18px 18px;
+    border-left: 2px solid #3D5A52;
+    display: flex; flex-direction: column; gap: 6px;
+    align-self: stretch;
+  }
+  .inst-card .kicker { font: 500 9.5px 'Inter',sans-serif; text-transform: uppercase; letter-spacing: 0.14em; color: #3D5A52; }
+  .inst-card h4 { font-family: 'Cormorant SC', serif; color: #3D5A52; font-size: 19px; font-weight: 500; margin: 2px 0 4px; }
+  .inst-card .meta { font: 11px 'Inter',sans-serif; color: rgba(42,53,48,0.7); }
+  .inst-card p  { font-family: 'Lora', serif; color: #2A3530; font-size: 12px; line-height: 1.5; margin: 0; }
+
+  /* MUSA essay card */
+  .musa-card {
+    padding: 12px 0 8px 14px;
+    display: flex; flex-direction: column; gap: 4px;
+    border-left: 1px solid #C5A572;
+    align-self: stretch;
+  }
+  .musa-card .num { font: 500 9.5px 'Inter',sans-serif; text-transform: uppercase; letter-spacing: 0.22em; color: #4A4036; }
+  .musa-card h4 { font-family: 'DM Serif Display', serif; color: #1F1A16; font-size: 22px; font-weight: 400; margin: 4px 0; line-height: 1.1; }
+  .musa-card .byline { font: 10px 'Inter',sans-serif; text-transform: uppercase; letter-spacing: 0.18em; color: #4A4036; }
+  .musa-card p { font-family: 'EB Garamond', serif; color: #1F1A16; font-size: 13px; line-height: 1.5; margin: 4px 0 0; }
+</style>
+</head>
+<body>
+<div class="card" style="padding:0;">
+  <div class="row">
+    <div class="well cfbl">
+      <div class="cfbl-card">
+        <div class="kicker">Service</div>
+        <h4>Trauma-Informed Therapy</h4>
+        <p>Individual therapy paired with relational warmth and evidence-based care.</p>
+        <span class="arrow">Learn more →</span>
+      </div>
+    </div>
+    <div class="well inst">
+      <div class="inst-card">
+        <div class="kicker">Live Workshop · 6 CE</div>
+        <h4>Assessment for the Trauma Clinician</h4>
+        <div class="meta">Nov 14 · Online · $245</div>
+        <p>Integrating diagnostic precision with somatic and nervous-system work.</p>
+      </div>
+    </div>
+    <div class="well musa">
+      <div class="musa-card">
+        <div class="num">Essay · No. 12</div>
+        <h4>The Quiet Room</h4>
+        <div class="byline">By Angela Serravalle</div>
+        <p>What we call composure is sometimes the body refusing to translate.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

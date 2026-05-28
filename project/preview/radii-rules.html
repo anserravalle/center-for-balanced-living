@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Radii & Rules</title>
+<link rel="stylesheet" href="_card.css"/>
+<style>
+  body { background: #FAFAF7; }
+  .row { display: grid; grid-template-columns: 1.2fr 1.4fr; gap: 28px; }
+  .radii { display: flex; gap: 14px; align-items: flex-end; }
+  .radii .r { width: 56px; height: 56px; background: #fff; border: 1px solid rgba(31,26,22,0.12); display: flex; align-items: flex-end; justify-content: center; padding-bottom: 6px; font: 500 10px 'Inter', sans-serif; color: rgba(31,26,22,0.6); }
+  .rules { display: flex; flex-direction: column; gap: 14px; }
+  .rules .r { display: flex; align-items: center; gap: 10px; }
+  .rules .r .line { flex: 1; }
+  .rules .r .tag  { font: 500 10.5px/1 'Inter', sans-serif; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(31,26,22,0.55); min-width: 92px; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="row">
+    <div>
+      <div class="label" style="margin-bottom: 14px;">Corner radii — restrained</div>
+      <div class="radii">
+        <div class="r" style="border-radius: 0">0</div>
+        <div class="r" style="border-radius: 2px">2</div>
+        <div class="r" style="border-radius: 4px">4</div>
+        <div class="r" style="border-radius: 8px">8</div>
+      </div>
+      <div class="value" style="margin-top:10px; max-width: 220px;">No pills. No oversized rounding. Most surfaces are square or 2 px.</div>
+    </div>
+    <div>
+      <div class="label" style="margin-bottom: 14px;">Hairline rules — single-weight, brand-tinted</div>
+      <div class="rules">
+        <div class="r"><span class="tag">CFBL</span><div class="line" style="border-top: 1px solid rgba(43,82,117,0.35); height: 1px;"></div></div>
+        <div class="r"><span class="tag">Institute</span><div class="line" style="border-top: 1px solid rgba(61,90,82,0.4); height: 1px;"></div></div>
+        <div class="r"><span class="tag">MUSA</span><div class="line" style="border-top: 1px solid rgba(74,64,54,0.4); height: 1px;"></div></div>
+        <div class="r"><span class="tag">MUSA · Ochre</span><div class="line" style="border-top: 1px solid #C5A572; height: 1px;"></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Brand Imagery</title>
+<link rel="stylesheet" href="_card.css"/>
+<style>
+  body { background: #FAFAF7; }
+  .card { padding: 0; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr 1fr; }
+  .col { padding: 18px 18px 16px; display: flex; flex-direction: column; gap: 12px; min-height: 460px; }
+  .col.cfbl { background: #EED9C5; }
+  .col.inst { background: #EAE2D0; border-left: 1px solid rgba(31,26,22,0.07); border-right: 1px solid rgba(31,26,22,0.07); }
+  .col.musa { background: #F1E8D8; }
+
+  .col-head { display: flex; flex-direction: column; gap: 4px; }
+  .label { font: 500 9.5px/1 'Inter',sans-serif; text-transform: uppercase; letter-spacing: 0.16em; }
+  .label.cfbl { color: #9D654E; }
+  .label.inst { color: #6F8F7A; }
+  .label.musa { color: #C5A572; }
+  .name { font-size: 13px; font-weight: 600; }
+  .name.cfbl { color: #2B5275; font-family: 'Montserrat',sans-serif; }
+  .name.inst { color: #3D5A52; font-family: 'Inter',sans-serif; }
+  .name.musa { color: #4A4036; font-family: 'Inter',sans-serif; letter-spacing: 0.02em; }
+
+  /* hero/example tile */
+  .tile { position: relative; overflow: hidden; border-radius: 2px; aspect-ratio: 4 / 3; }
+  .tile img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+  /* CFBL example uses real image */
+
+  /* Institute composed example */
+  .inst-example {
+    background: #F0EAE0;
+    display: flex;
+    flex-direction: column;
+    padding: 14px 14px 12px;
+    gap: 6px;
+    aspect-ratio: 4 / 3;
+    justify-content: space-between;
+    border-left: 2px solid #3D5A52;
+  }
+  .inst-example .ex-tag { font: 500 8.5px/1 'Inter',sans-serif; text-transform: uppercase; letter-spacing: 0.16em; color: #3D5A52; }
+  .inst-example .ex-title { font-family: 'Cormorant SC', serif; color: #3D5A52; font-weight: 500; font-size: 16px; line-height: 1.1; }
+  .inst-example .ex-meta { font: 9px 'Inter',sans-serif; color: rgba(42,53,48,0.7); text-transform: uppercase; letter-spacing: 0.1em; }
+  .inst-example .ex-portrait {
+    flex: 1;
+    background: linear-gradient(135deg, #B8C9BC 0%, #6F8F7A 100%);
+    margin-top: 6px;
+    position: relative;
+    overflow: hidden;
+  }
+  .inst-example .ex-portrait::after {
+    content: ''; position: absolute; inset: 0;
+    background: radial-gradient(ellipse at 60% 40%, rgba(255,255,255,0.18), transparent 60%);
+  }
+
+  /* MUSA composed example */
+  .musa-example {
+    background: #F1E8D8;
+    aspect-ratio: 4 / 3;
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-top: 1px solid #C5A572;
+    border-bottom: 1px solid #C5A572;
+    gap: 6px;
+  }
+  .musa-example .ex-issue { font: 500 8px/1 'Inter',sans-serif; text-transform: uppercase; letter-spacing: 0.22em; color: #4A4036; }
+  .musa-example .ex-title { font-family: 'DM Serif Display',serif; color: #1F1A16; font-size: 24px; line-height: 1; }
+  .musa-example .ex-byline { font: 500 8px/1 'Inter',sans-serif; text-transform: uppercase; letter-spacing: 0.22em; color: #4A4036; }
+  .musa-example .ex-dot   { color: #6E1F23; }
+
+  /* rules list */
+  .rules { display: grid; gap: 4px; }
+  .rule {
+    display: grid; grid-template-columns: 14px 1fr; gap: 7px;
+    font: 10.5px/1.4 'Inter',sans-serif;
+    color: rgba(31,26,22,0.78);
+  }
+  .rule .mark { font: 600 11px/1 'Inter',sans-serif; line-height: 1.4; }
+  .rule.do  .mark { color: #3D7A52; }
+  .rule.no  .mark { color: #9D2E2E; }
+  .rule.do strong, .rule.no strong { font-weight: 600; color: rgba(31,26,22,0.92); }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="grid">
+    <!-- CFBL -->
+    <div class="col cfbl">
+      <div class="col-head">
+        <div class="label cfbl">Center for Balanced Living</div>
+        <div class="name cfbl">Warm photography · one image per page</div>
+      </div>
+      <div class="tile">
+        <img src="../assets/cfbl-tree-portrait.jpeg" alt="Rainbow tree" />
+      </div>
+      <div class="rules">
+        <div class="rule do"><span class="mark">+</span><span>Painterly warmth, autumnal palette (the tree is the signature)</span></div>
+        <div class="rule do"><span class="mark">+</span><span>Sand-veil over hero so type leads, image supports</span></div>
+        <div class="rule no"><span class="mark">×</span><span>No stock therapy imagery, no generic wellness photography</span></div>
+        <div class="rule no"><span class="mark">×</span><span>No multiple photos competing on a page</span></div>
+      </div>
+    </div>
+
+    <!-- Institute -->
+    <div class="col inst">
+      <div class="col-head">
+        <div class="label inst">CFBL Institute</div>
+        <div class="name inst">Editorial portraits · paper textures · sage fields</div>
+      </div>
+      <div class="inst-example">
+        <div>
+          <div class="ex-tag">Live Workshop · 6 CE</div>
+          <div class="ex-title">Assessment for the Trauma Clinician</div>
+        </div>
+        <div class="ex-portrait" aria-hidden="true"></div>
+        <div class="ex-meta">Presenter · Angela Serravalle, Psy.D.</div>
+      </div>
+      <div class="rules">
+        <div class="rule do"><span class="mark">+</span><span>Editorial presenter portraits in neutral light</span></div>
+        <div class="rule do"><span class="mark">+</span><span>Paper textures, sage fields, single hero per page</span></div>
+        <div class="rule no"><span class="mark">×</span><span>No spa-style imagery, no decorative botanicals</span></div>
+        <div class="rule no"><span class="mark">×</span><span>No gradients, no soft-focus stock photography</span></div>
+      </div>
+    </div>
+
+    <!-- MUSA -->
+    <div class="col musa">
+      <div class="col-head">
+        <div class="label musa">MUSA</div>
+        <div class="name musa">Type-led leads · book covers · varied composition</div>
+      </div>
+      <div class="musa-example">
+        <div class="ex-issue">Essay No. 12</div>
+        <div class="ex-title">The Quiet Room</div>
+        <div class="ex-byline">By Angela Serravalle &nbsp;<span class="ex-dot">·</span>&nbsp; Nov 2026</div>
+      </div>
+      <div class="rules">
+        <div class="rule do"><span class="mark">+</span><span>Vary lead composition (full-bleed Oxblood block; Bone with oversized Walnut headline; Ochre rule with centered title)</span></div>
+        <div class="rule do"><span class="mark">+</span><span>Book covers, editorial author portrait when used</span></div>
+        <div class="rule no"><span class="mark">×</span><span>No stock photography of women writing in journals</span></div>
+        <div class="rule no"><span class="mark">×</span><span>No therapist-credential framing at the top of essays</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

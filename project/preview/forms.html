@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Form Inputs</title>
+<link rel="stylesheet" href="_card.css"/>
+<style>
+  .row { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0; }
+  .col { padding: 16px; }
+  .col.cfbl { background: #EED9C5; }
+  .col.inst { background: #EAE2D0; }
+  .col.musa { background: #F1E8D8; }
+
+  .field { display: flex; flex-direction: column; gap: 6px; margin-bottom: 12px; }
+  .field label { font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 500; }
+  .field input, .field textarea {
+    background: rgba(255,255,255,0.55);
+    border: 1px solid rgba(31,26,22,0.18);
+    padding: 9px 11px;
+    font-size: 13px;
+    border-radius: 2px;
+    outline: none;
+  }
+  .cfbl label { color: #2B5275; font-family: 'Montserrat',sans-serif; }
+  .cfbl input { font-family: 'Montserrat',sans-serif; color: #1F2A33; border-color: rgba(43,82,117,0.3); }
+  .cfbl input:focus { border-color: #2B5275; }
+
+  .inst label { color: #3D5A52; font-family: 'Inter',sans-serif; }
+  .inst input { font-family: 'Lora',serif; color: #2A3530; border-color: rgba(61,90,82,0.3); }
+  .inst input:focus { border-color: #3D5A52; }
+
+  .musa label { color: #4A4036; font-family: 'Inter',sans-serif; letter-spacing: 0.18em; }
+  .musa input { font-family: 'EB Garamond',serif; color: #1F1A16; background: rgba(255,255,255,0.4); border-color: rgba(74,64,54,0.3); font-size: 14px; }
+  .musa input:focus { border-color: #6E1F23; }
+
+  .placeholder { color: rgba(31,26,22,0.35); }
+</style>
+</head>
+<body>
+<div class="card" style="padding:0;">
+  <div class="row">
+    <div class="col cfbl">
+      <div class="field"><label>Name</label><input type="text" placeholder="Your full name" class="placeholder" value=""/></div>
+      <div class="field"><label>How can we help?</label><input type="text" value="Therapy for adults"/></div>
+    </div>
+    <div class="col inst">
+      <div class="field"><label>License Type</label><input type="text" value="LCSW · Delaware"/></div>
+      <div class="field"><label>CE Hours Sought</label><input type="text" value="6.0"/></div>
+    </div>
+    <div class="col musa">
+      <div class="field"><label>Email</label><input type="text" value="reader@example.com"/></div>
+      <div class="field"><label>How did you find MUSA?</label><input type="text" value="A friend forwarded an essay"/></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

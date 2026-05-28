@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>CFBL Logo</title>
+<link rel="stylesheet" href="_card.css"/>
+<style>
+  .panels { display: grid; grid-template-columns: 1fr 1fr; gap: 0; height: 100%; }
+  .panel { display: flex; align-items: center; justify-content: center; padding: 20px; }
+  .panel.sand { background: #EED9C5; }
+  .panel.white { background: #FAFAF7; border-right: 1px solid rgba(31,26,22,0.06); }
+  .panel img { max-width: 180px; max-height: 150px; object-fit: contain; }
+  .tag { position: absolute; left: 14px; bottom: 10px; font: 500 9.5px/1 'Inter', sans-serif; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(31,26,22,0.5); }
+  .tag.dark { color: rgba(43, 82, 117, 0.7); }
+  .panel { position: relative; }
+</style>
+</head>
+<body>
+<div class="card" style="padding:0;">
+  <div class="panels">
+    <div class="panel white">
+      <img src="../assets/cfbl-logo-rainbow.png" alt="CFBL primary logo"/>
+      <span class="tag">Primary · Light</span>
+    </div>
+    <div class="panel sand">
+      <img src="../assets/cfbl-logo-rainbow.png" alt="CFBL on sand"/>
+      <span class="tag dark">On Sand</span>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Buttons</title>
+<link rel="stylesheet" href="_card.css"/>
+<style>
+  .cluster { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0; }
+  .col { padding: 16px 18px; border-right: 1px solid rgba(31,26,22,0.08); display:flex; flex-direction:column; gap: 10px; }
+  .col:last-child { border-right: 0; }
+  .tag { font: 500 10px/1 'Inter', sans-serif; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.6; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; padding: 10px 18px; font-size: 13px; font-weight: 500; letter-spacing: 0.02em; border-radius: 2px; border: 1px solid transparent; text-decoration: none; cursor: pointer; }
+  /* CFBL */
+  .b-cfbl-primary   { background:#2B5275; color:#fff; font-family:'Montserrat',sans-serif; }
+  .b-cfbl-secondary { background:transparent; color:#2B5275; border-color:#2B5275; font-family:'Montserrat',sans-serif; }
+  /* Institute */
+  .b-inst-primary   { background:#3D5A52; color:#F0EAE0; font-family:'Inter',sans-serif; text-transform:uppercase; letter-spacing:0.08em; font-size:11.5px; padding: 11px 18px; }
+  .b-inst-secondary { background:transparent; color:#3D5A52; border-color:#3D5A52; font-family:'Inter',sans-serif; text-transform:uppercase; letter-spacing:0.08em; font-size:11.5px; padding: 11px 18px; }
+  /* MUSA */
+  .b-musa-primary   { background:#6E1F23; color:#F1E8D8; font-family:'Inter',sans-serif; }
+  .b-musa-secondary { background:transparent; color:#6E1F23; border-color:#6E1F23; font-family:'Inter',sans-serif; }
+</style>
+</head>
+<body>
+<div class="card" style="padding:0;">
+  <div class="cluster">
+    <div class="col" style="background:#EED9C5;">
+      <div class="tag" style="color:#2B5275;">CFBL</div>
+      <a class="btn b-cfbl-primary">Schedule a Consultation</a>
+      <a class="btn b-cfbl-secondary">Meet the Team</a>
+    </div>
+    <div class="col" style="background:#EAE2D0;">
+      <div class="tag" style="color:#3D5A52;">Institute</div>
+      <a class="btn b-inst-primary">Register</a>
+      <a class="btn b-inst-secondary">Apply for CE Credit</a>
+    </div>
+    <div class="col" style="background:#F1E8D8;">
+      <div class="tag" style="color:#6E1F23;">MUSA</div>
+      <a class="btn b-musa-primary">Subscribe to Essays</a>
+      <a class="btn b-musa-secondary">Order the Book</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>

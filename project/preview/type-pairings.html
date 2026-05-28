@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Type Pairings</title>
+<link rel="stylesheet" href="_card.css"/>
+<style>
+  .row { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0; }
+  .pair { padding: 14px 18px; border-right: 1px solid rgba(31,26,22,0.08); }
+  .pair:last-child { border-right: 0; }
+  .pair .badge { font: 500 9.5px/1 'Inter', sans-serif; text-transform: uppercase; letter-spacing: 0.1em; padding: 4px 8px; border-radius: 2px; display: inline-block; margin-bottom: 10px; }
+  .pair .display { font-size: 22px; line-height: 1.1; margin-bottom: 6px; }
+  .pair .body    { font-size: 13.5px; line-height: 1.55; opacity: 0.85; }
+  .pair .meta    { font: 500 10px/1.4 'Inter', sans-serif; letter-spacing: 0.05em; color: rgba(31,26,22,0.55); margin-top: 8px; }
+</style>
+</head>
+<body>
+<div class="card" style="padding:0;">
+  <div class="row">
+    <div class="pair" style="background:#EED9C5;">
+      <span class="badge" style="background:#2B5275;color:#fff;">CFBL</span>
+      <div class="display" style="font-family:'Cormorant SC',serif; color:#2B5275; font-weight:500;">Cormorant SC</div>
+      <div class="body" style="font-family:'Montserrat',sans-serif; color:#1F2A33;">Montserrat — accessible, modern, warm</div>
+      <div class="meta">Display 500 / Body 400–600</div>
+    </div>
+    <div class="pair" style="background:#EAE2D0;">
+      <span class="badge" style="background:#3D5A52;color:#F0EAE0;">Institute</span>
+      <div class="display" style="font-family:'Cormorant SC',serif; color:#3D5A52; font-weight:500;">Cormorant SC</div>
+      <div class="body" style="font-family:'Lora',Georgia,serif; color:#2A3530;">Lora — book-friendly serif for long reading</div>
+      <div class="meta">Display 500 / Body 400 / Utility Inter</div>
+    </div>
+    <div class="pair" style="background:#F1E8D8;">
+      <span class="badge" style="background:#6E1F23;color:#F1E8D8;">MUSA</span>
+      <div class="display" style="font-family:'DM Serif Display',serif; color:#1F1A16;">DM Serif Display</div>
+      <div class="body" style="font-family:'EB Garamond',Georgia,serif; color:#1F1A16;">EB Garamond — classical literary serif</div>
+      <div class="meta">Display 400 / Body 400 / Utility Inter</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

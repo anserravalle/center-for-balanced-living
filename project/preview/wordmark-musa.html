@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>MUSA Wordmark</title>
+<link rel="stylesheet" href="_card.css"/>
+<style>
+  body { background: #F1E8D8; }
+  .card { padding: 0; height: 100%; }
+  .row { display: grid; grid-template-columns: 1fr 1fr; gap: 0; height: 100%; align-items: stretch; }
+  .panel-image { position: relative; overflow: hidden; background: #F1E8D8; }
+  .panel-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .tag {
+    position: absolute; left: 12px; bottom: 10px;
+    font: 500 9.5px/1 'Inter',sans-serif; text-transform: uppercase; letter-spacing: 0.14em;
+    background: rgba(241,232,216,0.94); color: #6E1F23;
+    padding: 5px 9px; border-radius: 2px;
+  }
+  .panel-text {
+    padding: 22px 24px;
+    display: flex; flex-direction: column; justify-content: center;
+    gap: 14px;
+  }
+  .issue { font-family: 'Inter',sans-serif; text-transform: uppercase; letter-spacing: 0.22em; font-size: 10px; color: #4A4036; }
+  .wm {
+    font-family: 'DM Serif Display', serif;
+    color: #1F1A16;
+    font-size: 64px;
+    line-height: 0.9;
+    letter-spacing: -0.01em;
+    margin: 0;
+  }
+  .rule { width: 32px; height: 1px; background: #6E1F23; }
+  .sub  { font-family: 'Inter',sans-serif; color: #4A4036; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.22em; }
+  .byline { font-family: 'Inter',sans-serif; color: #4A4036; font-size: 10px; text-transform: uppercase; letter-spacing: 0.22em; opacity: 0.75; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="row">
+    <div class="panel-image">
+      <img src="../assets/musa-book-icon.png" alt="MUSA visual signature: books, candle, leaves, ink and pen on woven ground"/>
+      <span class="tag">Visual signature</span>
+    </div>
+    <div class="panel-text">
+      <div class="issue">No. 04 &middot; Essays &amp; Publications</div>
+      <h1 class="wm">MUSA</h1>
+      <div class="rule"></div>
+      <div class="sub">Books &middot; Essays &middot; Publications</div>
+      <div class="byline">By Angela Serravalle</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
