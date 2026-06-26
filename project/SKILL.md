@@ -23,6 +23,7 @@ This skill contains the design system for three connected but distinct propertie
    - `musa-book-icon.png` — MUSA visual signature still-life.
 4. **Use `ui_kits/`** as high-fidelity references when building new screens. Each kit has well-factored JSX components.
 5. **Use `preview/`** to remind yourself how tokens look in context — these are the small specimen cards.
+6. **Use `canva-brand-system.md`** when working in Canva — it documents the three Brand Kits, the account folder taxonomy, and the LinkedIn/website/Instagram size matrix for producing collateral.
 
 ## Cross-brand rules — load-bearing
 
