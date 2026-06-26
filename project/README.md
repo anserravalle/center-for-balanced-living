@@ -269,6 +269,7 @@ This means **one set of Liquid sections** serves all three brands. There is no p
 |---|---|
 | `README.md` | This file. Brand context, content rules, visual foundations, theme plan. |
 | `colors_and_type.css` | All CSS variables (palettes, type, spacing, radii, shadows) and brand-scoped defaults. The single source of truth. |
+| `canva-brand-system.md` | Canva operating manual: Brand Kit verification, folder taxonomy, the LinkedIn/website/Instagram size matrix, and the resize SOP. |
 | `SKILL.md` | Agent-skill frontmatter so this design system can be invoked by Claude or Claude Code. |
 | `assets/` | Logos, hero imagery, brand photography. |
 | `preview/` | Small HTML cards that populate the **Design System** tab. Read these to see tokens in context. |
