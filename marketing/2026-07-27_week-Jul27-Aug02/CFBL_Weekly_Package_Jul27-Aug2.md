@@ -13,14 +13,15 @@ All squares are **1080 × 1080** (exported at 2×). Reel frames are **1080 × 19
 
 ---
 
-## ⚠️ Items to confirm BEFORE these go out
+## ✅ Confirmations applied (July 26)
 
-1. **Thu Jul 30 — Parenting With Purpose (Row 5).** The sheet marks this *"Needs fee and registration details."* Per brand rules I did **not** invent them. Before publishing, add:
-   - **Participation fee**
-   - **Registration method / link** (the live Shopify product page URL once published)
-   - **Facilitator listing** — the sheet says add *Brianna's* name **only after confirming how she should be listed** (name + credentials). Her name is currently **not** on the graphic.
-2. **Wed Jul 29 — Nature-Based EMDR (Row 4).** The sheet says *"reuse the completed Nature-Based EMDR promotional graphic — do not rebuild."* I could not access that original file, so I've prepared a fully on-brand version as a **drop-in backup**. If you have the approved original, use it instead; otherwise this one is ready.
-3. **Registration / blog links.** Add the final URLs (Institute registration pages, evaluation blog, Shopify product page) into each caption + the Meta link field before scheduling. Placeholders are marked `[LINK]` below.
+1. **Parenting With Purpose** now starts **Friday, August 21, 2026** (updated from Aug 14 across the Thursday post, Saturday still, and captions). *Note: same date as the Nature-Based EMDR workshop, but different audience and time — group is 5:00–6:00 PM, workshop is 12:00–3:00 PM.*
+2. **No fee** — the group is **free to attend** (now shown on the graphic).
+3. **Facilitator** listed as **"Brianna, Associate Counselor."** *(If you'd like her last name or license letters added, tell me and I'll update.)*
+4. **Nature-Based EMDR (Wed Jul 29)** now uses your **approved original graphic** (`03_Wed-Jul29_Institute-NatureEMDR-Promo_APPROVED.png`). My backup is retained as `…_BACKUP-unused.png`.
+5. **Links** — registration lives on the Shopify site (**balancedlivingde.com**). For each post, paste the specific Shopify product/page URL into Metricool's link field; captions point to the site.
+
+> **Shopify to-do:** update the Parenting With Purpose product page start date to **August 21** (the sheet's product description still says Aug 14).
 
 ---
 
@@ -98,7 +99,7 @@ All squares are **1080 × 1080** (exported at 2×). Reel frames are **1080 × 19
 
 ## POST 3 — Wed Jul 29 · CFBL Institute · Single promotional post
 **Topic:** Nature-Based EMDR — stronger clinical decisions
-**File:** `03_Wed-Jul29_Institute-NatureEMDR-Promo.png`  *(drop-in backup — see confirm item #2; use approved original if available)*
+**File:** `03_Wed-Jul29_Institute-NatureEMDR-Promo_APPROVED.png`  *(your approved original graphic)*
 
 **Caption (verbatim):**
 > A clinically useful training should change how you assess, decide, and respond—not simply give you a list of appealing interventions.
@@ -121,7 +122,7 @@ All squares are **1080 × 1080** (exported at 2×). Reel frames are **1080 × 19
 
 **Alt text:** "CFBL Institute promotional graphic: 'A Training Should Change Your Clinical Decision-Making — not merely give you more interventions.' Details: Nature-Based EMDR, Friday August 21, 2026, 12:00–3:00 PM ET, live via Zoom, 3 EMDRIA credits. Register today."
 
-**Checklist:** ☑ Brand (Institute) ☑ Date (Aug 21) ☑ Time (12–3 ET) ☑ CTA present ☐ Link to add ☑ Grammar ☑ Mobile readable ⚠ Prefer approved original graphic if on hand
+**Checklist:** ☑ Brand (Institute) ☑ Date (Aug 21) ☑ Time (12–3 ET) ☑ CTA present ☑ Approved original graphic ☐ Link to add ☑ Grammar ☑ Mobile readable
 
 ---
 
@@ -129,32 +130,30 @@ All squares are **1080 × 1080** (exported at 2×). Reel frames are **1080 × 19
 **Topic:** Parenting With Purpose — monthly virtual support group
 **Files:** `04_Thu-Jul30_CFBL-ParentingWithPurpose_WITH-TEXT.png` (post) · `…_BACKGROUND-no-text.png` (text-free version for a real lifestyle photo overlay or reuse)
 
-> **⚠ Do not publish until confirmed:** participation fee, registration method/link, and how Brianna should be listed (name + credentials). None are shown on the current graphic. See the Shopify image prompt below if you want to swap in a real warm parent-child photo.
-
-**Caption (verbatim):**
+**Caption (updated date + free + facilitator):**
 > Parenting children and teens can involve moments of pride, uncertainty, conflict, connection, and constant adjustment.
 >
 > Parenting With Purpose is a monthly virtual support group for adults who want to strengthen their parenting skills while connecting with others facing similar questions.
 >
 > The first meeting will focus on understanding children's and teens' emotions. Participants will explore emotional cues, reflection questions, and practical ways to support emotional awareness at home.
 >
-> Beginning Friday, August 14
-> 5:00–6:00 PM
-> Virtual
+> Beginning Friday, August 21
+> 5:00–6:00 PM · Virtual · Free to attend
+> Facilitated by Brianna, Associate Counselor
 >
-> Contact Center for Balanced Living for registration information.
+> Registration is on our website — contact Center for Balanced Living to learn more.
 
 **Hashtags:** #CenterForBalancedLivingDE #CFBL #ParentSupport #ParentingSkills #ParentingTeens #ParentingWithPurpose
 **CTA:** Contact CFBL to register or learn more.
 **Link:** [LINK — Parenting With Purpose Shopify product page, once published]
 **Suggested time:** Thu 7:00 PM ET (parent audience, evening)
 
-**Alt text:** "Warm sand-toned graphic with a botanical sprig: 'Parenting With Purpose — a virtual support group for adults who want to strengthen parenting skills for children and teens.' Meets virtually once a month, begins Friday August 14, 5:00–6:00 PM. Session one: Understanding Children's & Teens' Emotions. Center for Balanced Living."
+**Alt text:** "Warm sand-toned graphic with a botanical sprig: 'Parenting With Purpose — a virtual support group for adults who want to strengthen parenting skills for children and teens.' Begins Friday August 21, 5:00–6:00 PM; meets virtually once a month; free to attend; facilitated by Brianna, Associate Counselor. Session one: Understanding Children's & Teens' Emotions. Center for Balanced Living."
 
 **Shopify image prompt (art direction, if commissioning/using a real photo):**
 > A warm, welcoming home setting where a parent and preteen are sitting together at a table having a calm, thoughtful conversation… soft sage green, cream, and natural wood tones; houseplants; gentle natural window light; authentic expressions; emotionally safe and hopeful; realistic professional lifestyle photography; no text; generous negative space top/side for copy. Avoid exaggerated smiles, staged poses, clinical office atmosphere.
 
-**Checklist:** ☑ Brand (CFBL) ☑ Date (Aug 14) ☑ Time (5–6 PM) ☐ **Fee missing** ☐ **Registration method missing** ☐ **Facilitator listing missing** ☑ Grammar ☑ Mobile readable
+**Checklist:** ☑ Brand (CFBL) ☑ Date (Aug 21) ☑ Time (5–6 PM) ☑ Fee (free) ☑ Facilitator (Brianna, Associate Counselor) ☐ Add specific Shopify link ☑ Grammar ☑ Mobile readable
 
 ---
 
@@ -202,7 +201,7 @@ All squares are **1080 × 1080** (exported at 2×). Reel frames are **1080 × 19
 >
 > Support does not mean someone else has the perfect answer. It means having a place to think, learn, ask questions, and feel less alone while developing skills that fit your family.
 >
-> Parenting With Purpose begins August 14 and will meet virtually once a month.
+> Parenting With Purpose begins August 21 and will meet virtually once a month.
 >
 > Contact CFBL for information.
 
@@ -211,7 +210,7 @@ All squares are **1080 × 1080** (exported at 2×). Reel frames are **1080 × 19
 **Link:** [LINK — Parenting With Purpose page] *(link back to the product page)*
 **Suggested time:** Sat 10:00 AM ET
 
-**Alt text:** "Warm sand-toned graphic: 'Parenting Is Personal. It does not have to be isolating. Parenting With Purpose begins August 14.' Center for Balanced Living."
+**Alt text:** "Warm sand-toned graphic: 'Parenting Is Personal. It does not have to be isolating. Parenting With Purpose begins August 21.' Center for Balanced Living."
 
 **Checklist:** ☑ Brand (CFBL) ☑ Date (Aug 14) ☑ Times n/a ☑ CTA present ☐ Link to add ☑ Grammar ☑ Mobile readable
 
@@ -250,9 +249,10 @@ All squares are **1080 × 1080** (exported at 2×). Reel frames are **1080 × 19
 ---
 
 ## Shopify Launch Checklist status (from sheet, tab 2)
+Resolved: **fee = free**, **facilitator = Brianna, Associate Counselor**, **start date = Aug 21** (update the product page — sheet still says Aug 14).
 Still **To do / Confirm** before the Parenting With Purpose product page goes live:
-- Product **image** created/uploaded · **price** (confirm fee) · checkout button tested (mobile + desktop) · confirmation email (Zoom access + contact)
-- Page content: who it's for · **facilitator bio & credentials (Brianna)** · confidentiality & group limits (is it therapy?) · attendance/missed-session policy · **Delaware residency requirement?**
-- Marketing: copy final product URL back into the sheet · schedule Thu announcement, Sat community post, and Story sequence (announcement → who it's for → first session → registration CTA)
+- Product **image** uploaded · set price to **$0 / free** · checkout or RSVP button tested (mobile + desktop) · confirmation email (Zoom access + contact)
+- Page content: who it's for · **Brianna's bio** (associate counselor — note supervising clinician if required for compliance) · confidentiality & group limits (is it therapy or support/education?) · attendance/missed-session policy · **Delaware residency requirement?**
+- Marketing: copy final product URL into each post's link field · schedule Thu announcement, Sat community post, and Story sequence (announcement → who it's for → first session → registration CTA)
 
 Everything else in tab 2 (title, description, SEO title, meta description, URL handle `parenting-with-purpose`, tags, product type, vendor, collection) is marked **Done**.
