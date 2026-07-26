@@ -1,0 +1,165 @@
+/* ============================================================
+   CFBL SOCIAL ASSET SYSTEM
+   Derived from project/colors_and_type.css
+   Canvas-first: fixed pixel frames for IG/FB/LinkedIn/Stories
+   ============================================================ */
+
+:root {
+  /* CFBL (parent / Clinical) */
+  --cfbl-deep-navy:#2B5275; --cfbl-sky-blue:#4E9FBF; --cfbl-sand:#EED9C5;
+  --cfbl-sand-light:#F5E7D6; --cfbl-sand-pale:#FAF1E6; --cfbl-terracotta:#9D654E;
+  --cfbl-ink:#1F2A33; --cfbl-rule:rgba(43,82,117,0.18);
+  --cfbl-font-display:'Cormorant SC','Cormorant Garamond',Georgia,serif;
+  --cfbl-font-body:'Montserrat',system-ui,sans-serif;
+
+  /* Institute */
+  --inst-sage:#6F8F7A; --inst-sage-mist:#B8C9BC; --inst-soft-sky:#C2D7E9;
+  --inst-cream:#EAE2D0; --inst-paper:#F0EAE0; --inst-forest:#3D5A52;
+  --inst-ink:#2A3530; --inst-rule:rgba(61,90,82,0.22);
+  --inst-font-display:'Cormorant SC','Cormorant Garamond',Georgia,serif;
+  --inst-font-body:'Lora','Iowan Old Style',Georgia,serif;
+  --inst-font-utility:'Inter',system-ui,sans-serif;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+/* Each slide is an isolated fixed canvas */
+.canvas {
+  position:relative; overflow:hidden;
+  display:flex; flex-direction:column;
+}
+.square   { width:1080px; height:1080px; }
+.story    { width:1080px; height:1920px; }
+.landscape{ width:1200px; height:628px; }  /* LinkedIn / FB link */
+
+/* ---------- Brand grounds ---------- */
+.brand-cfbl      { background:var(--cfbl-sand); color:var(--cfbl-ink);
+                   font-family:var(--cfbl-font-body); }
+.brand-institute { background:var(--inst-cream); color:var(--inst-ink);
+                   font-family:var(--inst-font-body); }
+
+/* ---------- Shared layout scaffolding ---------- */
+.pad { padding:96px; }
+.pad-lg { padding:120px 110px; }
+.stack { display:flex; flex-direction:column; }
+.spread { justify-content:space-between; }
+.center { justify-content:center; align-items:center; text-align:center; }
+.grow { flex:1; }
+
+/* ---------- Eyebrow / kicker ---------- */
+.kicker {
+  font-family:var(--inst-font-utility);
+  text-transform:uppercase; letter-spacing:0.22em;
+  font-weight:600; font-size:22px;
+}
+.brand-cfbl .kicker      { color:var(--cfbl-terracotta); font-family:'Inter',sans-serif; }
+.brand-institute .kicker { color:var(--inst-sage); }
+
+/* ---------- Display headlines ---------- */
+.display {
+  font-weight:500; line-height:1.08; letter-spacing:0.01em;
+}
+.brand-cfbl .display      { font-family:var(--cfbl-font-display); color:var(--cfbl-deep-navy); }
+.brand-institute .display { font-family:var(--inst-font-display); color:var(--inst-forest); }
+
+.d-xxl { font-size:104px; }
+.d-xl  { font-size:82px; }
+.d-lg  { font-size:66px; }
+.d-md  { font-size:52px; }
+.d-sm  { font-size:40px; }
+
+/* ---------- Body copy ---------- */
+.body { line-height:1.5; }
+.brand-cfbl .body      { font-family:var(--cfbl-font-body); color:var(--cfbl-ink); }
+.brand-institute .body { font-family:var(--inst-font-body); color:var(--inst-ink); }
+.b-lg { font-size:38px; line-height:1.5; }
+.b-md { font-size:32px; line-height:1.55; }
+.b-sm { font-size:27px; line-height:1.55; }
+
+/* ---------- Numerals for enumerated slides ---------- */
+.numeral {
+  font-family:var(--inst-font-display);
+  color:var(--inst-sage); font-weight:600;
+  font-size:150px; line-height:1;
+}
+.brand-cfbl .numeral { color:var(--cfbl-terracotta); font-family:var(--cfbl-font-display); }
+
+/* ---------- Hairline rule ---------- */
+.rule { border:0; height:1px; width:100%; }
+.brand-cfbl .rule      { background:var(--cfbl-rule); }
+.brand-institute .rule { background:var(--inst-rule); }
+.rule-accent { height:3px; width:96px; border:0; }
+.brand-cfbl .rule-accent      { background:var(--cfbl-terracotta); }
+.brand-institute .rule-accent { background:var(--inst-sage); }
+
+/* ---------- Detail / registration block ---------- */
+.detail-line { display:flex; align-items:baseline; gap:14px; }
+.detail-label {
+  font-family:'Inter',sans-serif; text-transform:uppercase;
+  letter-spacing:0.14em; font-size:20px; font-weight:600;
+}
+.brand-institute .detail-label { color:var(--inst-sage); }
+.brand-cfbl .detail-label { color:var(--cfbl-terracotta); }
+
+/* ---------- Pill / CE badge ---------- */
+.badge {
+  display:inline-flex; align-items:center; gap:12px;
+  font-family:'Inter',sans-serif; font-weight:600; font-size:24px;
+  letter-spacing:0.04em; padding:16px 30px; border-radius:2px;
+}
+.brand-institute .badge { background:var(--inst-forest); color:var(--inst-paper); }
+.brand-cfbl .badge      { background:var(--cfbl-deep-navy); color:#fff; }
+.badge-outline {
+  background:transparent; border:1.5px solid currentColor;
+}
+.brand-institute .badge-outline { color:var(--inst-forest); }
+.brand-cfbl .badge-outline      { color:var(--cfbl-deep-navy); }
+
+/* ---------- CTA button (visual) ---------- */
+.cta {
+  display:inline-flex; align-items:center; justify-content:center;
+  font-family:'Inter',sans-serif; font-weight:600; letter-spacing:0.08em;
+  text-transform:uppercase; font-size:26px; padding:26px 54px; border-radius:2px;
+}
+.brand-institute .cta { background:var(--inst-forest); color:var(--inst-paper); }
+.brand-cfbl .cta      { background:var(--cfbl-deep-navy); color:#fff; }
+
+/* ---------- Footer lockup ---------- */
+.footer-lockup {
+  display:flex; align-items:center; gap:22px;
+  font-family:'Inter',sans-serif; letter-spacing:0.16em;
+  text-transform:uppercase; font-size:20px; font-weight:500;
+}
+.brand-institute .footer-lockup { color:var(--inst-forest); }
+.brand-cfbl .footer-lockup      { color:var(--cfbl-deep-navy); }
+.footer-lockup img { height:64px; width:auto; display:block; }
+
+/* ---------- Page counter ---------- */
+.counter {
+  position:absolute; bottom:52px; right:64px;
+  font-family:'Inter',sans-serif; font-size:20px; letter-spacing:0.1em;
+  font-weight:500; opacity:0.55;
+}
+.swipe {
+  position:absolute; bottom:52px; right:64px;
+  font-family:'Inter',sans-serif; font-size:22px; letter-spacing:0.1em;
+  font-weight:600; text-transform:uppercase; display:flex; gap:12px; align-items:center;
+}
+.brand-institute .swipe { color:var(--inst-sage); }
+.brand-cfbl .swipe { color:var(--cfbl-terracotta); }
+
+/* ---------- Image tiles for photo slides ---------- */
+.photo { width:100%; height:100%; object-fit:cover; display:block; }
+.overlay-scrim {
+  position:absolute; inset:0;
+  background:linear-gradient(180deg, rgba(31,42,51,0) 30%, rgba(31,42,51,0.72) 100%);
+}
+
+/* ---------- Corner brand tag ---------- */
+.corner-tag {
+  position:absolute; top:64px; left:96px;
+  font-family:'Inter',sans-serif; text-transform:uppercase;
+  letter-spacing:0.2em; font-size:20px; font-weight:600;
+}
+.brand-institute .corner-tag { color:var(--inst-sage); }
+.brand-cfbl .corner-tag { color:var(--cfbl-terracotta); }
