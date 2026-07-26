@@ -21,9 +21,15 @@ Warm, authentic, emotionally safe, professional. Educate and build trust — nev
 never manipulative, never invent workshops/dates/prices/credentials. Institute posts are
 peer-to-peer (clinician audience); practice posts are warm and relational.
 
+## Logos (keep sub-brands distinct — confirmed & fixed this week)
+- **Practice posts** (evaluations, therapy, groups, community) → **Center for Balanced Living** logo.
+- **Institute posts** (trainings/workshops) → **CFBL Institute** circular tree emblem.
+- Never put the Institute emblem on a practice post (or vice versa).
+
 ## Look & feel (what she likes)
 - The **Nature-Based EMDR** graphic is the north star: real photo integrated, warm, finished.
 - Prefers **photo-forward + bolder** designs over plain typographic slides.
+- **Real photography only — no AI-generated people.** AI portraits read as off for a clinical/trust brand; her real portrait + genuine session photos are the standard.
 - Style system (v2): magazine-cover **photo frames** on title/closer slides (transparent window
   so a real photo drops in via Canva), **bolder content slides** (color fields, big watermark
   numerals, botanical leaf accent). Generator: `2026-07-27_week-*/src-v2/build.py`.
@@ -63,3 +69,4 @@ peer-to-peer (clinician audience); practice posts are warm and relational.
 - MUSA **newsletter announcement** (gold/red) — newsletter drops ~mid-August; build when topic/date given.
 - Consider a weekly Routine to auto-start production when a new planning sheet arrives.
 - She adds real photos to the Canva frames herself (files too large to send to chat).
+- No real "teaching/in-session" photos of Dr. Niki yet — use her portrait or nature stills in Institute covers/reels until a real training photo exists.
