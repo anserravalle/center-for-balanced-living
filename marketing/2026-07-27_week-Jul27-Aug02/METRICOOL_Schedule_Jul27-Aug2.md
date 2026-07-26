@@ -1,8 +1,15 @@
 # Metricool Scheduling Sheet — Week of Jul 27 – Aug 2, 2026
 
-Two Metricool brands, each with its own Facebook, Instagram, LinkedIn, TikTok, and Google Business Profile.
+Two Metricool brands, each with its own Facebook, Instagram, LinkedIn, TikTok, and Google Business Profile
+(practice = **CFBL**; your work = **Dr. Niki**, covering Institute + MUSA).
 Put **hashtags in the "first comment"** field. Paste the **specific Shopify/blog URL** into the link field
 (all live on **balancedlivingde.com**). Times are ET suggestions — adjust to taste.
+
+**Instagram Collab:** on the **CFBL** posts, add the **Dr. Niki (Institute/MUSA)** account as an Instagram
+**Collaborator** so the post appears on both feeds from one post (no need to duplicate it on the Dr. Niki brand).
+In Metricool, look for the **"Collaborators" / "Invite collaborator"** field in the Instagram post settings; if it's
+not offered on your plan, add the collab natively in the IG app at post time (Instagram must be a Business/Creator
+account, and the Dr. Niki account has to *accept* the invite for it to show on that feed).
 
 - **Carousels** (Mon, Tue, Sun): post as multi-image to Instagram / Facebook / LinkedIn; optional photo-slideshow on TikTok. On **Google**, use slide 1 only.
 - **Reel** (Fri): needs assembly first — see note under that post.
@@ -84,7 +91,7 @@ Put **hashtags in the "first comment"** field. Paste the **specific Shopify/blog
 # ▸ BRAND: CFBL  (groups · staff · events · community)
 
 ## Tue Jul 28 · 12:30 PM · 6-slide carousel
-**Channels:** Instagram · Facebook (CFBL) · LinkedIn · Google (slide 1) · TikTok (optional)
+**Channels:** Instagram (+ Collab: Dr. Niki) · Facebook (CFBL) · LinkedIn · Google (slide 1) · TikTok (optional)
 **Images:** `02_Tue-Jul28_CFBL-Evaluations_slide-01…06.png` (in order)
 **Link:** [Evaluation blog — balancedlivingde.com]
 **Caption:**
@@ -102,7 +109,7 @@ Put **hashtags in the "first comment"** field. Paste the **specific Shopify/blog
 **Google:** "Not every psychological evaluation answers the same question. Our blog explains educational, psychological, neuropsychological, and neurodevelopmental evaluations — and why the right referral question matters." · Button: Learn more
 
 ## Thu Jul 30 · 7:00 PM · single image
-**Channels:** Instagram · Facebook (CFBL) · LinkedIn · Google (event) · TikTok (optional)
+**Channels:** Instagram (+ Collab: Dr. Niki) · Facebook (CFBL) · LinkedIn · Google (event) · TikTok (optional)
 **Image:** `04_Thu-Jul30_CFBL-ParentingWithPurpose_WITH-TEXT.png`
 *(text-free background `…_BACKGROUND-no-text.png` available if you want to drop in a real photo of Brianna or a warm parent–child image)*
 **Link:** [Parenting With Purpose page — balancedlivingde.com]
@@ -122,7 +129,7 @@ Put **hashtags in the "first comment"** field. Paste the **specific Shopify/blog
 **Google (event post):** "Parenting With Purpose — a FREE monthly virtual support group for parents of children and teens. First session: understanding children's & teens' emotions. Begins Fri Aug 21, 5:00–6:00 PM. Facilitated by Brianna, Associate Counselor." · Event dates: Aug 21 · Button: Sign up
 
 ## Sat Aug 1 · 10:00 AM · single image
-**Channels:** Instagram · Facebook (CFBL) · LinkedIn · Google
+**Channels:** Instagram (+ Collab: Dr. Niki) · Facebook (CFBL) · LinkedIn · Google
 **Image:** `06_Sat-Aug1_CFBL-Community_WITH-TEXT.png`
 **Link:** [Parenting With Purpose page — balancedlivingde.com]
 **Caption:**
