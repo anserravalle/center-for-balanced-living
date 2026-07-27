@@ -1,0 +1,17 @@
+<svg viewBox="0 0 320 520" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <path d="M160 12 C 70 120, 44 320, 160 508 C 276 320, 250 120, 160 12 Z"
+          fill="currentColor" fill-opacity="0.16"/>
+    <path d="M160 30 L160 486" stroke="currentColor" stroke-opacity="0.5" stroke-width="3" fill="none"/>
+    <g stroke="currentColor" stroke-opacity="0.32" stroke-width="2.4" fill="none">
+      <path d="M160 90 C 120 96, 100 120, 92 150"/>
+      <path d="M160 90 C 200 96, 220 120, 228 150"/>
+      <path d="M160 170 C 112 178, 88 206, 78 244"/>
+      <path d="M160 170 C 208 178, 232 206, 242 244"/>
+      <path d="M160 258 C 118 268, 96 296, 88 332"/>
+      <path d="M160 258 C 202 268, 224 296, 232 332"/>
+      <path d="M160 348 C 128 358, 110 384, 104 414"/>
+      <path d="M160 348 C 192 358, 210 384, 216 414"/>
+    </g>
+  </g>
+</svg>

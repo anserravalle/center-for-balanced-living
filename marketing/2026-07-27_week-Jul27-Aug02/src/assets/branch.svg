@@ -1,0 +1,18 @@
+<svg viewBox="0 0 460 340" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <g stroke="#9D654E" stroke-width="2.4" stroke-linecap="round">
+    <path d="M8 332 C 140 268, 250 210, 448 30"/>
+    <!-- leaf pairs: stem tick + leaf outline -->
+    <g fill="#9D654E" fill-opacity="0.14">
+      <ellipse cx="96" cy="286" rx="34" ry="15" transform="rotate(-28 96 286)"/>
+      <ellipse cx="128" cy="248" rx="34" ry="15" transform="rotate(-40 128 248)"/>
+      <ellipse cx="168" cy="248" rx="30" ry="13" transform="rotate(20 168 248)"/>
+      <ellipse cx="196" cy="206" rx="34" ry="15" transform="rotate(-40 196 206)"/>
+      <ellipse cx="236" cy="206" rx="30" ry="13" transform="rotate(18 236 206)"/>
+      <ellipse cx="266" cy="166" rx="34" ry="15" transform="rotate(-42 266 166)"/>
+      <ellipse cx="306" cy="166" rx="30" ry="13" transform="rotate(16 306 166)"/>
+      <ellipse cx="334" cy="122" rx="32" ry="14" transform="rotate(-44 334 122)"/>
+      <ellipse cx="372" cy="120" rx="28" ry="12" transform="rotate(14 372 120)"/>
+      <ellipse cx="398" cy="76" rx="28" ry="12" transform="rotate(-46 398 76)"/>
+    </g>
+  </g>
+</svg>
